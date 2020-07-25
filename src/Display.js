@@ -13,7 +13,7 @@ function Display({ stateCopy, handleClick }) {
 
   const displayStyle = {
     width: 'auto',
-    height: '42px',
+    height: '60px',
     padding: '10px',
     backgroundColor: '#D4E4E3',
     textAlign: 'right',
