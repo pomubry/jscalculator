@@ -11,19 +11,9 @@ function Display({ stateCopy, handleClick }) {
     );
   });
 
-  const displayStyle = {
-    width: 'auto',
-    height: '60px',
-    padding: '10px',
-    backgroundColor: '#D4E4E3',
-    textAlign: 'right',
-    display: 'flex',
-    flexDirection: 'column',
-    borderRadius: '10px',
-  };
   return (
     <div className="calc">
-      <div style={displayStyle}>
+      <div className="displayStyle">
         <div className="total" style={{ height: '100%' }}>
           {total.length > 22 ? `...${total.slice(total.length - 22)}` : total}
         </div>

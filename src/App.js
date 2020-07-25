@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { evaluate } from 'mathjs';
 import Display from './Display';
+import github from './github.svg';
 
 export class App extends Component {
   state = {
@@ -107,7 +108,15 @@ export class App extends Component {
   render() {
     return (
       <div className="App">
+        <h1>Javascript Calculator</h1>
         <Display stateCopy={this.state} handleClick={this.handleClick} />
+        <div className="credits">
+          <p>Designed and Coded By</p>
+          <a href="https://github.com/pomubry">
+            <img src={github} alt="github icon" />
+            Bryan Taduran
+          </a>
+        </div>
       </div>
     );
   }

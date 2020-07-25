@@ -23,20 +23,18 @@ body {
       format('svg');
 }
 
-.total,
-#display {
-  font-family: 'Digital';
-  font-size: 29px;
-  transform: scale(1.1, 1);
-  transform-origin: right;
-}
-
 .App {
   background-color: #3e2723;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.App h1 {
+  margin-bottom: 30px;
+  color: white;
 }
 
 .calc {
@@ -45,6 +43,25 @@ body {
   border-radius: 10px;
   width: 400px;
   padding: 10px;
+}
+
+.total,
+#display {
+  font-family: 'Digital';
+  font-size: 29px;
+  transform: scale(1.1, 1);
+  transform-origin: right;
+}
+
+.displayStyle {
+  width: auto;
+  height: 60px;
+  padding: 10px;
+  background-color: #d4e4e3;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
 }
 
 #zero {
@@ -151,4 +168,28 @@ button:hover {
 
 #clear:hover {
   background-color: #f19274;
+}
+
+.credits {
+  font-family: 'Share Tech Mono', monospace;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.credits a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  margin: 10px 0;
+}
+
+.credits a img {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
 }
