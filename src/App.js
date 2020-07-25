@@ -112,7 +112,7 @@ export class App extends Component {
         <Display stateCopy={this.state} handleClick={this.handleClick} />
         <div className="credits">
           <p>Designed and Coded By</p>
-          <a href="https://github.com/pomubry">
+          <a href="https://github.com/pomubry" target="_blank">
             <img src={github} alt="github icon" />
             Bryan Taduran
           </a>
