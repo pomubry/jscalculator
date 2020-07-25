@@ -28,7 +28,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -176,7 +176,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 5px;
 }
 
 .credits a {
