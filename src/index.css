@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  border-style: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.App {
+  background-color: #3e2723;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc {
+  border: 1px solid black;
+  background-color: #16191c;
+  border-radius: 10px;
+  width: 400px;
+  padding: 10px;
+}
+
+#zero {
+  grid-area: zero;
+}
+
+#one {
+  grid-area: one;
+}
+
+#two {
+  grid-area: two;
+}
+
+#three {
+  grid-area: three;
+}
+
+#four {
+  grid-area: four;
+}
+
+#five {
+  grid-area: five;
+}
+
+#six {
+  grid-area: six;
+}
+
+#seven {
+  grid-area: seven;
+}
+
+#eight {
+  grid-area: eight;
+}
+
+#nine {
+  grid-area: nine;
+}
+
+#add {
+  grid-area: add;
+}
+
+#subtract {
+  grid-area: subtract;
+}
+
+#multiply {
+  grid-area: multiply;
+}
+
+#divide {
+  grid-area: divide;
+}
+
+#clear {
+  grid-area: clear;
+  background-color: #e78e51;
+  color: black;
+  transition: all 0.5s ease;
+}
+
+#equals {
+  grid-area: equals;
+}
+
+#decimal {
+  grid-area: decimal;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    'clear clear divide multiply'
+    'seven eight nine subtract'
+    'four five six add'
+    'one two three equals'
+    'zero zero decimal equals';
+  grid-gap: 5px;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #272b31;
+  outline: none;
+  border: 1px solid black;
+  border-style: ridge;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: 800;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  background-color: #4f4c52;
+}
+
+#clear:hover {
+  background-color: #f19274;
+}
