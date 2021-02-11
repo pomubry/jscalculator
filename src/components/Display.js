@@ -1,8 +1,8 @@
-import React from 'react';
 import buttons from './buttons';
 
 function Display({ stateCopy, handleClick }) {
   const { total, input } = stateCopy;
+
   const btn = buttons.map((obj) => {
     return (
       <button key={obj.id} id={obj.id} onClick={handleClick} value={obj.value}>
@@ -14,6 +14,7 @@ function Display({ stateCopy, handleClick }) {
   return (
     <div className="calc">
       <div className="displayStyle">
+        {/* Expression will truncate from the left when the string is at least 22 characters long */}
         <div className="total" style={{ height: '100%' }}>
           {total.length > 22 ? `...${total.slice(total.length - 22)}` : total}
         </div>
